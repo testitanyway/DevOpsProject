@@ -24,7 +24,7 @@ namespace TestProjects
             Assert.IsTrue(true);
         }
 
-        [TestMethod, TestCategory("DevOps")]
+        [TestMethod]
         public void TestMethod2()
         {
             System.Diagnostics.Trace.WriteLine("TestMethod2");
