@@ -1,0 +1,34 @@
+﻿<RunSettings>
+  <Description>
+    Run a UI test locally or on a VM test agent.
+  </Description>
+
+  <Execution>
+  </Execution>
+  
+  <!-- MSTest adapter -->
+ <MSTest>
+    <Parallelize>
+      <Workers>0</Workers>
+      <Scope>MethodLevel</Scope>
+    </Parallelize>
+      <TestTimeout>1000000</TestTimeout> 
+  </MSTest>
+
+  <RunConfiguration>
+    <MaxCpuCount>0</MaxCpuCount>
+    <DisableParallelization>true</DisableParallelization>
+    <!-- Path relative to solution directory -->
+<!--    <ResultsDirectory>.\TestResults</ResultsDirectory>-->
+    <!-- Path to Test Adapters -->
+    <!--  <TestAdaptersPaths>%SystemDrive%\Temp\foo;%SystemDrive%\Temp\bar</TestAdaptersPaths>-->
+  </RunConfiguration>
+
+  <TestRunParameters>
+
+    <Parameter name="Environment" value="Prod" />
+    <Parameter name="Browser" value="Chrome" />
+
+  </TestRunParameters>
+
+</RunSettings>

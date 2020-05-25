@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Web.Script.Serialization;
 
-namespace DevOpsProject
+namespace TestProjects
 {
     public class UnitTest2
     {
